@@ -67,7 +67,7 @@ const TeamSection = () => {
                 <img
                   src={member.image}
                   alt={`Foto ${member.name} - ${member.role}`}
-                  className={`w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 ${member.imagePosition}`}
+                  className={`w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500 ${member.imagePosition}`}
                   loading="lazy"
                 />
               </div>
