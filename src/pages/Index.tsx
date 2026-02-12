@@ -1,28 +1,25 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import CapabilitiesSection from "@/components/CapabilitiesSection";
-import VisionSection from "@/components/VisionSection";
-import LeadershipCard from "@/components/LeadershipCard";
+import ServicesSection from "@/components/ServicesSection";
+import AboutSection from "@/components/AboutSection";
+import TeamSection from "@/components/TeamSection";
+import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <a href="#main-content" className="skip-to-content">
+        Skip to content
+      </a>
       <Header />
-      <HeroSection />
-      <CapabilitiesSection />
-
-      <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-12 gap-12">
-        <div className="md:col-span-8">
-          <VisionSection />
-        </div>
-        <aside className="md:col-span-4">
-          <div className="sticky top-24">
-            <LeadershipCard />
-          </div>
-        </aside>
-      </div>
-
+      <main id="main-content">
+        <HeroSection />
+        <ServicesSection />
+        <AboutSection />
+        <TeamSection />
+        <CTASection />
+      </main>
       <Footer />
     </div>
   );
