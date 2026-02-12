@@ -7,7 +7,7 @@ import teamAdhitya from "@/assets/team-adhitya.jpg";
 const teamMembers = [
   {
     name: "Mochamad Iqbal Fawzan",
-    role: "Chief Information Officer",
+    role: "Partner, IT Strategy & Digital Transformation",
     bio: "Berpengalaman dalam strategi IT enterprise dan transformasi digital, memimpin arah visi teknologi informasi perusahaan.",
     image: teamIqbal,
     imagePosition: "object-[center_5%]",
@@ -15,7 +15,7 @@ const teamMembers = [
   },
   {
     name: "Erlangga Putera",
-    role: "Chief Technology Officer",
+    role: "Partner, Cybersecurity Infrastructure & Architecture",
     bio: "Pakar infrastruktur keamanan dan arsitektur teknologi. Memimpin tim teknis dalam proyek-proyek kritis dan inovasi solusi siber.",
     image: teamErlangga,
     imagePosition: "object-[center_20%]",
@@ -23,7 +23,7 @@ const teamMembers = [
   },
   {
     name: "Adhitya Jiwa Pratama",
-    role: "Security & Project Specialist",
+    role: "Partner, Cyber Security Compliance & GRC",
     bio: "Spesialis manajemen proyek keamanan siber dengan keahlian dalam implementasi framework compliance dan assessment keamanan.",
     image: teamAdhitya,
     imagePosition: "object-[center_53%]",
