@@ -10,7 +10,7 @@ const teamMembers = [
     role: "Chief Information Officer",
     bio: "Berpengalaman dalam strategi IT enterprise dan transformasi digital, memimpin arah visi teknologi informasi perusahaan.",
     image: teamIqbal,
-    imagePosition: "object-[center_15%]",
+    imagePosition: "object-[center_5%]",
     linkedin: "https://www.linkedin.com/in/mochamadfawzan/",
   },
   {
@@ -18,7 +18,7 @@ const teamMembers = [
     role: "Chief Technology Officer",
     bio: "Pakar infrastruktur keamanan dan arsitektur teknologi. Memimpin tim teknis dalam proyek-proyek kritis dan inovasi solusi siber.",
     image: teamErlangga,
-    imagePosition: "object-[center_15%]",
+    imagePosition: "object-[center_20%]",
     linkedin: "https://www.linkedin.com/in/erlanggaputera/",
   },
   {
@@ -26,7 +26,7 @@ const teamMembers = [
     role: "Security & Project Specialist",
     bio: "Spesialis manajemen proyek keamanan siber dengan keahlian dalam implementasi framework compliance dan assessment keamanan.",
     image: teamAdhitya,
-    imagePosition: "object-[center_15%]",
+    imagePosition: "object-[center_53%]",
     linkedin: "https://www.linkedin.com/in/adhityajp13410/",
   },
 ];
