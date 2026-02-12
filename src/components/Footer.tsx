@@ -9,6 +9,7 @@ const Footer = () => {
         <div className="md:col-span-1">
           <div className="flex items-center gap-2 mb-4">
             <img src={logoImg} alt="TRIAD PRO-TX SIBER Logo" className="h-10 w-auto" />
+            <span className="text-base font-bold tracking-wide text-dark-foreground">Triad <span className="text-accent">PRO-TX</span> Siber</span>
           </div>
           <p className="text-dark-muted/80 leading-relaxed">
             Solusi keamanan siber enterprise-grade untuk organisasi Indonesia.
