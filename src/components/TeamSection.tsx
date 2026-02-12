@@ -6,25 +6,28 @@ import teamAdhitya from "@/assets/team-adhitya.jpg";
 
 const teamMembers = [
   {
-    name: "Mochamad Iqbal",
+    name: "Mochamad Iqbal Fawzan",
     role: "Chief Information Officer",
     bio: "Berpengalaman dalam strategi IT enterprise dan transformasi digital, memimpin arah visi teknologi informasi perusahaan.",
     image: teamIqbal,
-    imagePosition: "object-[center_20%]",
+    imagePosition: "object-[center_15%]",
+    linkedin: "https://www.linkedin.com/in/mochamadfawzan/",
   },
   {
-    name: "Erlangga Putra",
+    name: "Erlangga Putera",
     role: "Chief Technology Officer",
     bio: "Pakar infrastruktur keamanan dan arsitektur teknologi. Memimpin tim teknis dalam proyek-proyek kritis dan inovasi solusi siber.",
     image: teamErlangga,
-    imagePosition: "object-[center_25%]",
+    imagePosition: "object-[center_15%]",
+    linkedin: "https://www.linkedin.com/in/erlanggaputera/",
   },
   {
-    name: "Adhitya Jiwa",
+    name: "Adhitya Jiwa Pratama",
     role: "Security & Project Specialist",
     bio: "Spesialis manajemen proyek keamanan siber dengan keahlian dalam implementasi framework compliance dan assessment keamanan.",
     image: teamAdhitya,
-    imagePosition: "object-[center_40%]",
+    imagePosition: "object-[center_15%]",
+    linkedin: "https://www.linkedin.com/in/adhityajp13410/",
   },
 ];
 
@@ -73,7 +76,9 @@ const TeamSection = () => {
                 <p className="text-accent text-sm font-semibold mb-3">{member.role}</p>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">{member.bio}</p>
                 <a
-                  href="#"
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-muted-foreground hover:text-accent text-sm transition-colors"
                   aria-label={`LinkedIn profile of ${member.name}`}
                 >
