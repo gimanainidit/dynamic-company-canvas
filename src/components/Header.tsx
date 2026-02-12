@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Shield } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logoImg from "@/assets/logo-protx.png";
 
 const navLinks = [
   { label: "Services", href: "/services" },
@@ -17,10 +18,7 @@ const Header = () => {
     <header className="bg-dark text-dark-foreground border-b-2 border-accent sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
-          <Shield className="w-8 h-8 text-accent group-hover:scale-110 transition-transform" />
-          <div className="text-xl font-serif font-black tracking-tight">
-            TRIAD <span className="text-accent">PRO-TX</span> SIBER
-          </div>
+          <img src={logoImg} alt="TRIAD PRO-TX SIBER Logo" className="h-12 w-auto group-hover:scale-105 transition-transform" />
         </Link>
 
         <nav className="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide uppercase">
