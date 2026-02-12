@@ -24,7 +24,7 @@ const teamMembers = [
     role: "Security & Project Specialist",
     bio: "Spesialis manajemen proyek keamanan siber dengan keahlian dalam implementasi framework compliance dan assessment keamanan.",
     image: teamAdhitya,
-    imagePosition: "object-[center_10%]",
+    imagePosition: "object-[center_40%]",
   },
 ];
 
