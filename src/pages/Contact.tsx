@@ -249,9 +249,9 @@ const Contact = () => {
                 <div className="mt-8 pt-6 border-t border-border">
                   <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-4">Tim Kami</h4>
                   {[
-                    { name: "Ahmad Fadhil", role: "CIO" },
-                    { name: "Rizky Pratama", role: "CTO" },
-                    { name: "Dian Safitri", role: "Security Project Specialist" },
+                    { name: "Mochamad Iqbal", role: "CIO" },
+                    { name: "Erlangga Putra", role: "CTO" },
+                    { name: "Adhitya Jiwa", role: "Security & Project Specialist" },
                   ].map((p) => (
                     <div key={p.name} className="flex items-center gap-3 mb-3">
                       <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
