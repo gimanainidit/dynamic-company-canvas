@@ -1,37 +1,50 @@
-import { MapPin, Phone, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
+import { MapPin, Mail, Shield } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="bg-dark text-dark-muted py-16 border-t border-dark-muted/20">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-sm">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10 text-sm">
+        <div className="md:col-span-1">
+          <div className="flex items-center gap-2 mb-4">
+            <Shield className="w-6 h-6 text-accent" />
+            <span className="text-dark-foreground font-serif font-black text-lg">TRIAD PRO-TX SIBER</span>
+          </div>
+          <p className="text-dark-muted/80 leading-relaxed">
+            Solusi keamanan siber enterprise-grade untuk organisasi Indonesia.
+          </p>
+        </div>
+
         <div>
           <h3 className="text-dark-foreground font-bold mb-4 uppercase tracking-wider text-xs">
-            Address
+            Navigasi
           </h3>
-          <div className="flex items-start gap-2">
-            <MapPin size={14} className="mt-1 text-primary shrink-0" />
-            <div>
-              <p>Menara Sentraya, Lt. 22</p>
-              <p>Jakarta Selatan, Indonesia</p>
-            </div>
+          <div className="space-y-2">
+            <Link to="/services" className="block hover:text-accent transition-colors">Services</Link>
+            <Link to="/resources" className="block hover:text-accent transition-colors">Resources</Link>
+            <Link to="/contact" className="block hover:text-accent transition-colors">Contact</Link>
           </div>
         </div>
+
         <div>
           <h3 className="text-dark-foreground font-bold mb-4 uppercase tracking-wider text-xs">
-            Connect
+            Kontak
           </h3>
           <div className="space-y-2">
             <p className="flex items-center gap-2">
-              <Mail size={14} className="text-primary" /> info@namaperusahaan.com
+              <Mail size={14} className="text-accent shrink-0" /> triad-proteksiber@pm.me
             </p>
-            <p className="flex items-center gap-2">
-              <Phone size={14} className="text-primary" /> +62 21 5555 8888
+            <p className="flex items-start gap-2">
+              <MapPin size={14} className="text-accent mt-1 shrink-0" />
+              <span>Jakarta, Indonesia</span>
             </p>
           </div>
         </div>
-        <div className="flex items-end">
+
+        <div className="flex flex-col justify-between">
+          <div />
           <p className="text-dark-muted/60">
-            &copy; 2024 NamaPerusahaan. All rights reserved.
+            &copy; {new Date().getFullYear()} TRIAD PRO-TX SIBER. All rights reserved.
           </p>
         </div>
       </div>
