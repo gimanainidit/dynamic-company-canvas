@@ -11,7 +11,7 @@ const Footer = () => {
             <img src={logoImg} alt="TRIAD PRO-TX SIBER Logo" className="h-10 w-auto" />
             <span className="text-base font-bold tracking-wide text-dark-foreground">Triad <span className="text-accent">PRO-TX</span> Siber</span>
           </div>
-          <p className="text-dark-muted/80 leading-relaxed">
+          <p className="text-dark-muted leading-relaxed">
             Solusi keamanan siber enterprise-grade untuk organisasi Indonesia.
           </p>
         </div>
@@ -44,7 +44,7 @@ const Footer = () => {
 
         <div className="flex flex-col justify-between">
           <div />
-          <p className="text-dark-muted/60">
+          <p className="text-dark-muted">
             &copy; {new Date().getFullYear()} TRIAD PRO-TX SIBER. All rights reserved.
           </p>
         </div>
