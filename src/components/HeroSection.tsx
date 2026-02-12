@@ -66,7 +66,9 @@ const HeroSection = () => {
               Hubungi Kami <ArrowRight size={18} />
             </Link>
             <a
-              href="#"
+              href="/Triad_Proteksi-Company_Deck.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border-2 border-dark-foreground/30 text-dark-foreground font-bold text-base hover:border-accent hover:text-accent transition-colors"
             >
               <Download size={18} /> Company Deck
