@@ -63,14 +63,14 @@ const TeamSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
             >
-              <div className="aspect-square bg-primary/10 overflow-hidden">
+              <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="block aspect-square bg-primary/10 overflow-hidden cursor-pointer">
                 <img
                   src={member.image}
                   alt={`Foto ${member.name} - ${member.role}`}
                   className={`w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500 ${member.imagePosition}`}
                   loading="lazy"
                 />
-              </div>
+              </a>
               <div className="p-6">
                 <h3 className="text-lg font-serif font-bold text-card-foreground">{member.name}</h3>
                 <p className="text-accent text-sm font-semibold mb-3">{member.role}</p>
