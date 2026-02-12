@@ -10,18 +10,21 @@ const teamMembers = [
     role: "Chief Information Officer",
     bio: "Berpengalaman dalam strategi IT enterprise dan transformasi digital, memimpin arah visi teknologi informasi perusahaan.",
     image: teamIqbal,
+    imagePosition: "object-[center_20%]",
   },
   {
     name: "Erlangga Putra",
     role: "Chief Technology Officer",
     bio: "Pakar infrastruktur keamanan dan arsitektur teknologi. Memimpin tim teknis dalam proyek-proyek kritis dan inovasi solusi siber.",
     image: teamErlangga,
+    imagePosition: "object-[center_25%]",
   },
   {
     name: "Adhitya Jiwa",
     role: "Security & Project Specialist",
     bio: "Spesialis manajemen proyek keamanan siber dengan keahlian dalam implementasi framework compliance dan assessment keamanan.",
     image: teamAdhitya,
+    imagePosition: "object-top",
   },
 ];
 
@@ -61,7 +64,7 @@ const TeamSection = () => {
                 <img
                   src={member.image}
                   alt={`Foto ${member.name} - ${member.role}`}
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  className={`w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 ${member.imagePosition}`}
                   loading="lazy"
                 />
               </div>
