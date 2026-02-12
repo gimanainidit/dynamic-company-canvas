@@ -1,24 +1,27 @@
 import { motion } from "framer-motion";
 import { Linkedin } from "lucide-react";
+import teamIqbal from "@/assets/team-iqbal.jpg";
+import teamErlangga from "@/assets/team-erlangga.jpg";
+import teamAdhitya from "@/assets/team-adhitya.jpg";
 
 const teamMembers = [
   {
-    name: "Ahmad Fadhil",
+    name: "Mochamad Iqbal",
     role: "Chief Information Officer",
-    bio: "Berpengalaman 15+ tahun dalam strategi IT enterprise dan transformasi digital di sektor keuangan dan telekomunikasi.",
-    image: null,
+    bio: "Berpengalaman dalam strategi IT enterprise dan transformasi digital, memimpin arah visi teknologi informasi perusahaan.",
+    image: teamIqbal,
   },
   {
-    name: "Rizky Pratama",
+    name: "Erlangga Putra",
     role: "Chief Technology Officer",
-    bio: "Pakar infrastruktur keamanan dengan sertifikasi CISSP dan OSCP. Memimpin tim teknis dalam proyek-proyek kritis nasional.",
-    image: null,
+    bio: "Pakar infrastruktur keamanan dan arsitektur teknologi. Memimpin tim teknis dalam proyek-proyek kritis dan inovasi solusi siber.",
+    image: teamErlangga,
   },
   {
-    name: "Dian Safitri",
-    role: "Security Project Specialist",
-    bio: "Spesialis manajemen proyek keamanan siber dengan track record implementasi SOC dan compliance framework di berbagai industri.",
-    image: null,
+    name: "Adhitya Jiwa",
+    role: "Security & Project Specialist",
+    bio: "Spesialis manajemen proyek keamanan siber dengan keahlian dalam implementasi framework compliance dan assessment keamanan.",
+    image: teamAdhitya,
   },
 ];
 
@@ -54,12 +57,13 @@ const TeamSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
             >
-              <div className="aspect-square bg-primary/10 flex items-center justify-center overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <span className="text-6xl font-serif font-black text-accent/30">
-                    {member.name.charAt(0)}
-                  </span>
-                </div>
+              <div className="aspect-square bg-primary/10 overflow-hidden">
+                <img
+                  src={member.image}
+                  alt={`Foto ${member.name} - ${member.role}`}
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  loading="lazy"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-serif font-bold text-card-foreground">{member.name}</h3>
