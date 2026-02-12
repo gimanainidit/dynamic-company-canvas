@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
 import { Link } from "react-router-dom";
 import NetworkMesh from "./NetworkMesh";
+import logoImg from "@/assets/logo-protx.png";
 
 const HeroSection = () => {
   return (
@@ -14,11 +15,20 @@ const HeroSection = () => {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
         <div className="max-w-3xl">
+          <motion.div
+            className="mb-8"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+          >
+            <img src={logoImg} alt="TRIAD PRO-TX SIBER Logo" className="h-32 sm:h-40 w-auto drop-shadow-[0_0_30px_rgba(0,163,255,0.3)]" />
+          </motion.div>
+
           <motion.span
             className="text-accent font-bold uppercase tracking-widest text-sm mb-4 block"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
           >
             Enterprise Cybersecurity
           </motion.span>

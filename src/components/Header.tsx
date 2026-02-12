@@ -18,7 +18,7 @@ const Header = () => {
     <header className="bg-dark text-dark-foreground border-b-2 border-accent sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
-          <img src={logoImg} alt="TRIAD PRO-TX SIBER Logo" className="h-12 w-auto group-hover:scale-105 transition-transform" />
+          <img src={logoImg} alt="TRIAD PRO-TX SIBER Logo" className="h-16 w-auto group-hover:scale-105 transition-transform" />
           <span className="text-lg font-bold tracking-wide text-dark-foreground">Triad <span className="text-accent">PRO-TX</span> Siber</span>
         </Link>
 
