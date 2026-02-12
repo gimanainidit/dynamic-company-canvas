@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { MapPin, Mail, Shield } from "lucide-react";
+import { MapPin, Mail } from "lucide-react";
+import logoImg from "@/assets/logo-protx.png";
 
 const Footer = () => {
   return (
@@ -7,8 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10 text-sm">
         <div className="md:col-span-1">
           <div className="flex items-center gap-2 mb-4">
-            <Shield className="w-6 h-6 text-accent" />
-            <span className="text-dark-foreground font-serif font-black text-lg">TRIAD PRO-TX SIBER</span>
+            <img src={logoImg} alt="TRIAD PRO-TX SIBER Logo" className="h-10 w-auto" />
           </div>
           <p className="text-dark-muted/80 leading-relaxed">
             Solusi keamanan siber enterprise-grade untuk organisasi Indonesia.
